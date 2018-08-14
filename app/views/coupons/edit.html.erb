@@ -1,0 +1,10 @@
+<h1> Edit Coupon: </h1>
+<div>
+<%= form_tag(coupon_path(@coupon), method: "patch") do %>
+  <%= label_tag :coupon_code %>
+    <%= text_field_tag :coupon_code %>
+  <%= label_tag :store %>
+    <%= text_field_tag :store %><br><br>
+  <div><%= submit_tag 'Save' %></div>
+<% end -%>
+</div>
